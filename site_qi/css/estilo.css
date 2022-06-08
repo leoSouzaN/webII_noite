@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 nav#links-uteis {
   display: flex;
@@ -19,29 +19,86 @@ nav#links-uteis ul > li {
 }
 
 nav#links-uteis ul > li > a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-section#menu-principal{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 5px;
+section#menu-principal {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px;
 }
 
-section#menu-principal span{
-    color: red;
+section#menu-principal span {
+  color: red;
+}
+
+section#menu-principal > section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+section#menu-principal article {
+  margin-top: 10px;
+}
+
+#banner {
+  height: 300px;
+  background-image: url("../img/fundohomepage.jpg");
+  background-size: cover;
 }
 
 /* Botões */
-.btn{
-    background-color: transparent;
-    outline: none;
-    border: 0;
-    border-radius: 8px;
-    padding: 10px;
+.btn {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  padding: 10px;
+  font-weight: bold;
 }
-.btn-outlined-red{
-    border: 2px solid red;
+.btn-outlined-red {
+  border-color: red;
+  color: red;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+}
+
+/* Caixas */
+.caixa-com-borda {
+  width: 80vw;
+  margin: 10px auto;
+  border: 2px solid red;
+  padding: 10px;
+}
+
+/* caixa-preenchida */
+.caixa-preenchida {
+  background-color: red;
+  color: white;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+p {
+  text-align: justify;
+}
+q {
+  text-align: center;
+  display: block;
+}
+q::before{
+    content: "| ";
+}
+
+p::selection{
+    background-color: yellow;
 }
